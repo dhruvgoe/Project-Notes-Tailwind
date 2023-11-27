@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="font-rubik">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Notes by Dhruv</title>
+    <script type="module" crossorigin src="/assets/index-mNwVpql2.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-cXUYl3y2.css">
+  </head>
+  <body>
+    <div class="w-full min-h-screen overflow-x-hidden">
+      <header
+        class="w-11/12 md:w-10/12 max-w-7xl mx-auto flex justify-between items-center gap-x-4 py-6"
+      >
+        <h1 class="text-3xl font-bold">NOTES</h1>
+        <button
+          class="addNote w-8 aspect-square rounded-full bg-black flex justify-center items-center"
+        >
+          <i class="fa-solid fa-plus text-white"></i>
+        </button>
+      </header>
+
+      <div
+        class="noteContainer w-11/12 md:w-10/12 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6"
+      ></div>
+    </div>
+    <template id="template" class="">
+      <div
+        class="w-full rounded-xl noteColor aspect-square p-3 md:p-5 flex flex-col gap-y-4"
+      >
+        <div class="flex justify-end ">
+          <button id="deleteButton" class="">
+            <i class="fa-solid fa-trash text-lg"></i>
+          </button>
+        </div>
+        <textarea id="writeMsg" class="noteCard w-full bg-transparent 
+        focus:outline-none text-lg overflow-y-visible resize-none h-full
+        text-justify pr-4"></textarea>
+        <div class="flex justify-between items-center gap-x-3">
+          <div id="msgDate" class="text-gray-700"></div>
+          <button id="editButton">
+            <i class="fa-solid editIconButton text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>

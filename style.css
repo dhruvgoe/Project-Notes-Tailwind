@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+.noteCard::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.noteCard::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0,0.7); /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+.noteCard::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+  height: 100px;
+}
